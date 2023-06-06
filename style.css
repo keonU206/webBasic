@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+#grid ol {
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+  padding-left: 32px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article {
+  padding-left: 25px;
+}
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-bottom: 1px solid gray;
+    border-right: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    padding-left: 32px;
+  }
+}
